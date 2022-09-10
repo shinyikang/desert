@@ -1,14 +1,23 @@
-#"You Are My Sunshine" in Colors
+# "You Are My Sunshine" in Colors
 
-#Week 2 HW
-#Amy Kang
-#09/10/2022
+# Week 2 HW
+# Amy Kang
+# 09/10/2022
 
 #Resource:
     # Code - https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/creating-and-editing-code
     # Music - https://musescore.com/user/13881501/scores/3028766
     # Chromesthesia - https://en.wikipedia.org/wiki/Chromesthesia#:~:text=Chromesthesia%20or%20sound%2Dto%2Dcolor,associations%2Fperceptions%20in%20daily%20life.
     # Scriabin Circle - https://www.researchgate.net/figure/Association-between-note-and-color-Alexander-Scriabin_fig2_319136065
+
+# Color and Music Note Coordination:
+# C - Red (255, 0, 0)
+# D - Yellow (255, 255, 0)
+# E - Sky Blue (195, 242, 255)
+# F - Deep Red (171, 0, 52)
+# G - Orange (255, 127, 0)
+# A - Green (51, 204, 51)
+# B - Blue (142, 201, 255)
 
 import time
 import board
@@ -20,14 +29,14 @@ else:
     import neopixel
     led = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
-# C - Red (255, 0, 0)
-# D - Yellow (255, 255, 0)
-# E - Light Blue (195, 242, 255)
-# F - Rouge (171, 0, 52)
-# G - Orange (255, 127, 0)
-# A - Green (51, 204, 51)
-# B - Sky Blue (142, 201, 255)
+# Animation Features
 
+    # 0.5 seconds = 1 beat
+    # Quarter note receives one beat
+    # 4 beats per measure
+
+    # Lyrics are printed as the music goes on
+    # Color fades out at the end of the song
 
 print("Music Start!")
 
@@ -150,7 +159,7 @@ time.sleep(0.5)
 led[0] = (195, 242, 255) # take (E)
 time.sleep(1.5)
 led[0] = (171, 0, 52) # my (F)
-time.sleep(1.0)
+time.sleep(0.5)
 
 led[0] = (255, 255, 0) # sun (D)
 time.sleep(1.0)
@@ -163,6 +172,8 @@ led[0] = (195, 242, 255) # a- (E)
 time.sleep(0.5)
 
 led[0] = (255, 0, 0) # way... (C)
-time.sleep(2.0)
+time.sleep(1.0)
+led.brightness = 0.1 # fade out = lower brightness
+time.sleep(1.0)
 
 print("Music End")
