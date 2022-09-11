@@ -5,10 +5,12 @@
 # 09/10/2022
 
 #Resource:
+    #Resources:
     # Code - https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/creating-and-editing-code
-    # Music - https://musescore.com/user/13881501/scores/3028766
+    # “You Are My Sunshine” Music Notes - https://musescore.com/user/13881501/scores/3028766
+    # Synesthesia - https://en.wikipedia.org/wiki/Synesthesia
     # Chromesthesia - https://en.wikipedia.org/wiki/Chromesthesia#:~:text=Chromesthesia%20or%20sound%2Dto%2Dcolor,associations%2Fperceptions%20in%20daily%20life.
-    # Scriabin Circle - https://www.researchgate.net/figure/Association-between-note-and-color-Alexander-Scriabin_fig2_319136065
+    # Scriabin Circle - https://en.wikipedia.org/wiki/Clavier_%C3%A0_lumi%C3%A8res
 
 # Color and Music Note Coordination:
 # C - Red (255, 0, 0)
